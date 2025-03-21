@@ -67,10 +67,10 @@
 
         CAPITAL {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                          &kp T                                                              &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                            &kp MINUS       &kp H        &kp J  &kp K      &kp L    &kp EXCLAMATION
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp TAB                               &kp UNDERSCORE  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INTERNATIONAL_4      &kp BACKSPACE   &lt 3 ENTER                             &lt_to_layer_0 6 DELETE
+&kp Q             &kp W         &kp E         &kp R                   &kp T                                                    &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                   &kp G        &kp ESCAPE                  &kp MINUS       &kp H        &kp J  &kp K      &kp L    &kp EXCLAMATION
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp TAB                     &kp UNDERSCORE  &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE   &lt 3 ENTER                             &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
