@@ -87,10 +87,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &none   &kp LS(NUMBER_6)  &kp LS(N5)        &trans                      &kp LS(N8)             &kp LS(NUMBER_9)     &trans            &trans            &trans
-&trans  &none   &kp LS(NUMBER_4)  &kp LEFT_BRACKET  &trans  &trans      &trans  &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp SEMICOLON     &kp SQT           &trans
-&trans  &none   &kp EQUAL         &kp LS(INT1)      &trans  &trans      &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &trans
-&trans  &trans  &trans            &trans            &trans  &trans      &trans  &trans                                                                          &trans
+&trans  &none   &kp LS(NUMBER_6)  &kp LS(N5)        &trans                      &trans  &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &trans            &trans
+&trans  &none   &kp LS(NUMBER_4)  &kp LEFT_BRACKET  &trans  &trans      &trans  &trans  &kp RIGHT_BRACKET      &kp NUHS          &kp SEMICOLON     &kp SQT
+&trans  &none   &kp EQUAL         &kp LS(INT1)      &trans  &trans      &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NUHS)      &kp LS(NUMBER_7)  &kp LS(NUMBER_2)
+&trans  &trans  &trans            &trans            &trans  &trans      &trans  &trans                                                             &trans
             >;
         };
 
@@ -107,7 +107,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &none     &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
