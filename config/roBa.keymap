@@ -81,7 +81,7 @@
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O               &kp P
 &kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                       &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 4 L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp TAB                          &kp QUESTION     &kp N        &kp M  &kp COMMA  &kp DOT             &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_HENKAN      &kp BACKSPACE    &lt 3 ENTER                                        &lt_to_layer_0 6 DELETE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 4 INT_HENKAN      &kp BACKSPACE    &lt 3 ENTER                                        &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -107,16 +107,16 @@
 
         ARROW {
             bindings = <
-&trans  &trans              &kp UP    &trans         &trans                      &trans  &trans        &kp UP    &trans         &trans
-&trans  &kp LEFT            &kp DOWN  &kp RIGHT      &trans  &trans      &trans  &trans  &kp LEFT      &kp DOWN  &kp RIGHT      &trans
-&trans  &kp LG(LEFT_ARROW)  &trans    &kp LG(RIGHT)  &trans  &trans      &trans  &trans  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &trans
-&trans  &trans              &trans    &trans         &trans  &trans      &trans  &trans                                         &trans
+&trans  &trans              &kp UP    &trans         &trans                      &kp HOME  &trans        &kp UP    &trans         &trans
+&trans  &kp LEFT            &kp DOWN  &kp RIGHT      &trans  &trans      &trans  &kp END   &kp LEFT      &kp DOWN  &kp RIGHT      &trans
+&trans  &kp LG(LEFT_ARROW)  &trans    &kp LG(RIGHT)  &trans  &trans      &trans  &trans    &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &trans
+&trans  &trans              &trans    &trans         &trans  &trans      &trans  &trans                                           &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB5  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &mkp MB5  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
