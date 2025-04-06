@@ -79,7 +79,7 @@
         CAPITAL {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                          &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O               &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                       &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 4 L  &lt_to_layer_0 4 MINUS
+&kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                       &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 4 L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp TAB                          &kp QUESTION     &kp N        &kp M  &kp COMMA  &kp DOT             &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 4 INT_HENKAN      &kp BACKSPACE    &lt 3 ENTER                                        &lt_to_layer_0 6 DELETE
             >;
