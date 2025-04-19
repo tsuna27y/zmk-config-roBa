@@ -54,7 +54,7 @@
         bt0: bt0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_off 7>, <&macro_wait_time 200>, <&bt BT_SEL 0>;
+            bindings = <&tog_off 1>, <&macro_wait_time 200>, <&bt BT_SEL 0>;
 
             label = "BT0";
         };
@@ -62,7 +62,7 @@
         bt1: bt1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&tog_off 7>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
+            bindings = <&tog_off 1>, <&macro_wait_time 200>, <&bt BT_SEL 1>;
 
             label = "BT1";
         };
@@ -71,11 +71,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 7>,
+                <&tog_off 0 &tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 7>;
+                <&tog_on 1>;
 
             label = "BT3";
         };
@@ -84,11 +84,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&tog_off 0 &tog_off 7>,
+                <&tog_off 0 &tog_off 1>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 2>,
                 <&macro_wait_time 500>,
-                <&tog_on 7>;
+                <&tog_on 1>;
 
             label = "BT4";
         };
@@ -134,10 +134,21 @@
 
         Windows_default {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                          &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O               &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                       &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 4 L  &kp MINUS
+&kp Q             &kp W         &kp E         &kp R                          &kp T                                                          &kp Y        &kp U  &lt 6 I    &kp O               &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G        &kp ESCAPE                       &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 5 L  &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp TAB                          &kp QUESTION     &kp N        &kp M  &kp COMMA  &kp DOT             &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 4 INT_HENKAN      &kp BACKSPACE    &lt 3 ENTER                                        &lt_to_layer_0 6 DELETE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 INT_MUHENKAN  &lt 3 SPACE  &lt_to_layer_0 5 INT_HENKAN      &kp BACKSPACE    &lt 4 ENTER                                        &lt_to_layer_0 7 DELETE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        Apple_default {
+            bindings = <
+&kp Q             &kp W             &kp E         &kp R                   &kp T                                                     &kp Y        &kp U  &lt 6 I    &kp O               &kp P
+&kp A             &kp S             &kp D         &kp F                   &kp G        &kp ESCAPE                  &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 5 L  &kp MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                   &kp B        &kp TAB                     &kp QUESTION     &kp N        &kp M  &kp COMMA  &kp DOT             &kp SLASH
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 2 LANG2  &lt 3 SPACE  &lt_to_layer_0 5 LANG1      &kp BACKSPACE    &lt 4 ENTER                                        &lt_to_layer_0 7 DELETE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -195,17 +206,6 @@
 &kp C_MUTE         &trans         &trans  &trans  &trans  &trans      &bootloader  &trans  &trans  &trans  &trans  &bt BT_CLR
 &trans             &trans         &trans  &trans  &trans  &trans      &trans       &trans                          &bt BT_CLR_ALL
             >;
-        };
-
-        Apple_default {
-            bindings = <
-&kp Q             &kp W             &kp E         &kp R                   &kp T                                                     &kp Y        &kp U  &lt 5 I    &kp O               &kp P
-&kp A             &kp S             &kp D         &kp F                   &kp G        &kp ESCAPE                  &kp EXCLAMATION  &kp H        &kp J  &kp K      &lt_to_layer_0 4 L  &kp MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V                   &kp B        &kp TAB                     &kp QUESTION     &kp N        &kp M  &kp COMMA  &kp DOT             &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt_to_layer_0 1 LANG2  &lt 2 SPACE  &lt_to_layer_0 4 LANG1      &kp BACKSPACE    &lt 3 ENTER                                        &lt_to_layer_0 6 DELETE
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
