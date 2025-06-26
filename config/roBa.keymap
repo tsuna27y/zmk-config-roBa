@@ -37,19 +37,19 @@
             key-positions = <6 7>;
         };
 
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <40 41>;
+        };
+
         tab_right {
             bindings = <&kp LC(TAB)>;
             key-positions = <17 18>;
         };
 
         tab_left {
-            bindings = <&kp LS(LC(TAB))>;
-            key-positions = <14 13>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <40 41>;
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <13 14>;
         };
     };
 
@@ -117,10 +117,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans              &kp UP    &trans         &trans                      &kp HOME  &trans        &kp UP    &trans         &trans
-&trans  &kp LEFT            &kp DOWN  &kp RIGHT      &trans  &trans      &trans  &kp END   &kp LEFT      &kp DOWN  &kp RIGHT      &trans
-&trans  &kp LG(LEFT_ARROW)  &trans    &kp LG(RIGHT)  &trans  &trans      &trans  &trans    &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &trans
-&trans  &trans              &trans    &trans         &trans  &trans      &trans  &trans                                           &trans
+&trans  &trans              &kp UP    &trans         &trans                      &kp HOME  &trans        &kp UP     &trans         &trans
+&trans  &kp LEFT            &kp DOWN  &kp RIGHT      &trans  &trans      &trans  &kp END   &kp LEFT      &kp DOWN   &kp RIGHT      &trans
+&trans  &kp LG(LEFT_ARROW)  &trans    &kp LG(RIGHT)  &trans  &trans      &trans  &trans    &kp LG(LEFT)  &kp LG(D)  &kp LG(RIGHT)  &trans
+&trans  &trans              &trans    &trans         &trans  &trans      &trans  &trans                                            &trans
             >;
         };
 
