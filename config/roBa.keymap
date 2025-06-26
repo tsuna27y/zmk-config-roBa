@@ -39,12 +39,12 @@
 
         tab_right {
             bindings = <&kp LC(TAB)>;
-            key-positions = <14 13>;
+            key-positions = <17 18>;
         };
 
         tab_left {
             bindings = <&kp LS(LC(TAB))>;
-            key-positions = <17 18>;
+            key-positions = <14 13>;
         };
 
         delete {
