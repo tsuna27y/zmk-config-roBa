@@ -17,29 +17,39 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
+        copy {
+            bindings = <&kp LC(C)>;
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <18 19>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <2 3>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        paste_history {
+            bindings = <&kp LG(V)>;
+            key-positions = <6 7>;
+        };
+
+        tab_right {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <14 13>;
+        };
+
+        tab_left {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <17 18>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <40 41>;
         };
     };
 
